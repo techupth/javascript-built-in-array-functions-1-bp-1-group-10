@@ -1,3 +1,5 @@
+// Exercise #4 : Get Completed Todo
+
 const todos = [
   { topic: "Doing pre-work", completed: true },
   { topic: "Workout", completed: false },
@@ -7,16 +9,17 @@ const todos = [
 ];
 
 function getCompletedTodo(todos) {
-  // Start coding here
-}
+  return todos.filter(todo => todo.completed);
+};
 
-getCompletedTodo(todos);
+const completedTodos = getCompletedTodo(todos);
+console.log(completedTodos);
 
 /* 
-	Output:
-	[
-		{ topic: 'Doing pre-work', completed: true },
-	  { topic: 'Playing computer games', completed: true },
-	  { topic: 'Clean the room', completed: true }
-	]
+    Output:
+    [
+        { topic: 'Doing pre-work', completed: true },
+      { topic: 'Playing computer games', completed: true },
+      { topic: 'Clean the room', completed: true }
+    ]
 */
